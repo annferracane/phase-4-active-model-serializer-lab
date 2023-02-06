@@ -3,7 +3,7 @@ class AuthorsController < ApplicationController
 
   def index
     authors = Author.all 
-    render json: authors, include: ['profile', 'posts', 'posts.tags']
+    render json: authors
   end
 
   def show
